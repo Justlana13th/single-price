@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+.pricing .container {
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    border-radius: 10px;
+    border: 1px solid rgba(71, 68, 68, 0.158);
+}
+
+.pricing-container .pricing-text {
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    
+}
+
+.pricing-container .pricing-text h2 {
+    font-weight: bold;
+    color: hsl(179, 62%, 43%);
+}
+
+.pricing-container .pricing-text h3 {
+    color: hsl(71, 73%, 54%);
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+}
+
+.pricing-container .pricing-text p {
+    line-height: 2;
+    font-size: 1rem;
+    color: grey;
+}
+
+.pricing-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: -10;
+}
+
+.pricing-card .monthly {
+    background-color: hsl(179, 62%, 43%);
+    padding: 2rem;
+    width: 100%;
+}
+
+.pricing-card .monthly h3 {
+    color: hsl(204, 43%, 93%);
+}
+
+.pricing-card .monthly h1 {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.pricing-card .monthly h1 span {
+    color: white;
+    opacity: 60%;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.pricing-card .monthly p {
+    color: hsl(204, 43%, 93%);
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card .monthly button {
+    width: 100%;
+    padding: 15px 0;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pricing-card .why-us {
+    background-color: hsl(179, 62%, 43%);
+    opacity: 70%;
+    padding: 2rem;
+    width: 100%;
+}
+
+.pricing-card .why-us h3 {
+    color: hsl(204, 43%, 93%);
+}
+
+.pricing-card .why-us p {
+    color: white;
+    opacity: 60%;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 780px) {
+    .pricing-card {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+}
+
+@media screen and (max-width: 400px) {
+    .pricing-card .monthly {
+    padding: 0.5rem;
+}
+}
