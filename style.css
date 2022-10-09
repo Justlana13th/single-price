@@ -7,21 +7,28 @@
 
 body {
     font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pricing .container {
-    width: 50%;
-    position: absolute;
-    top: 15%;
-    left: 15%;
+    /* width: 50%; */
+    width: 600px;
+    /* position: absolute; */
+    /* top: 15%;
+    left: 15%; */
     border-radius: 10px;
     border: 1px solid rgba(71, 68, 68, 0.158);
 }
 
 .pricing-container .pricing-text {
-    padding: 1rem 2rem;
-    margin-bottom: 1rem;
+    padding: 2rem 2rem;
     text-align: left;
+    background-color: white;
     
 }
 
@@ -107,13 +114,44 @@ body {
 }
 
 @media screen and (max-width: 780px) {
+
+
+    .pricing .container {
+        /* width: 50%; */
+        width: 500px;
+        /* position: absolute; */
+        /* top: 15%;
+        left: 15%; */
+    }
+
     .pricing-card {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 }
 
+@media screen and (max-width: 550px) {
+
+
+    .pricing .container {
+        /* width: 50%; */
+        width: 350px;
+        /* position: absolute; */
+        /* top: 15%;
+        left: 15%; */
+    }
+}
+
 @media screen and (max-width: 400px) {
+
+    .pricing .container {
+        /* width: 50%; */
+        width: 100%;
+        /* position: absolute; */
+        /* top: 15%;
+        left: 15%; */
+    }
+
     .pricing-card .monthly {
     padding: 0.5rem;
 }
